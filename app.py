@@ -22,7 +22,7 @@ app.config.suppress_callback_exceptions = True
 # Load data from csv
 def load_data():
     # Cargar el archivo CSV usando la ruta correcta
-    data = pd.read_csv(r'C:\Users\simif\OneDrive - Universidad de los andes\DESPLIEGUE DE SOLUCIONES ANALITICAS\1 SEMANA\Taller 1\datos_energia.csv')
+    data = pd.read_csv(r'datos_energia.csv')
     
     # Convertir la columna 'time' a formato datetime
     data['time'] = pd.to_datetime(data['time'])
